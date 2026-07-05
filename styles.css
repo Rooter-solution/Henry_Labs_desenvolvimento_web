@@ -67,7 +67,7 @@ header {
 
 .navbar li a {
     text-decoration: none;
-   text-transform: uppercase;
+    text-transform: uppercase;
     color: #ffff;
     font-size: clamp(13px, 1.2vw, 16px);
     transition: color 0.3s ease;
@@ -83,6 +83,7 @@ header {
     padding: 0.3em 1.2em;
     height: auto;
     min-height: 34px;
+    text-transform: uppercase;
     border: none;
     cursor: pointer;
     border-radius: 4px;
