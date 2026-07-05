@@ -101,7 +101,7 @@ header {
    HERO - RESPONSIVO
    ============================================ */
 .hero {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 1);
     background-image: url('ambienteDev.png');
     background-size: cover;
     background-position: center;
