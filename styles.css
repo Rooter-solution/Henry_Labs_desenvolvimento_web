@@ -34,7 +34,7 @@ header {
     border-bottom: 1px solid rgb(49, 49, 49);
     background: black;
     padding: 0.8rem 5%;
-    gap: 20px;
+    gap: 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
