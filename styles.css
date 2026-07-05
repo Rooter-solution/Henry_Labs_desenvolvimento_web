@@ -102,7 +102,7 @@ header {
    ============================================ */
 .hero {
     background: rgba(0, 0, 0, 0.85);
-    background-image: url('./images/ambienteDev.png');
+    background-image: url('./frontend/images/ambienteDev.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
