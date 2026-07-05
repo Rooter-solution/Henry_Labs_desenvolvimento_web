@@ -499,6 +499,9 @@ header {
     justify-content: center;
     text-align: center;
     min-height: 400px;
+    border: 1px solid grey:
+    border-radius: 8px;
+    background: rgb(19, 18, 18);
     height: auto;
     width: 100%;
     padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
@@ -516,9 +519,6 @@ form {
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    border: 1px solid grey:
-    border-radius: 8px;
-    background: rgb(19, 18, 18);
     align-items: center;
     justify-content: center;
     text-align: center;
