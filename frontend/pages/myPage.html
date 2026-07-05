@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale com Henry Vertez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="myPage.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <h1><strong><i class="fa-solid fa-code"></i></strong> Henry vertez</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/frontend/index.html">Inicio</a></li>
+                <li><a href="/frontend/index.html">Sobre</a></li>
+                <li><a href="#github">Projectos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+                <button class="CtaBtn" onclick="showPage('ChatWithMe')">Vamos conversar →</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ChatWithMe" id="ChatWithMe">
+        <h1>💬 Vamos Conversar</h1>
+        <p>Preencha o formulário abaixo e fale comigo pelo WhatsApp.</p>
+
+        <form id="conversation">
+
+            <div class="inputBox">
+                <label>Nome Completo</label>
+                <input type="text" id="fullname" placeholder="Digite o seu nome" required>
+            </div>
+
+            <div class="inputBox">
+                <label>E-mail</label>
+                <input type="email" id="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div class="inputBox">
+                <label>Telefone</label>
+                <input type="tel" id="phone" placeholder="+258 84 000 0000">
+            </div>
+
+            <div class="inputBox">
+                <label>Mensagem</label>
+                <textarea id="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
+            </div>
+
+            <button type="submit" class="sendBtn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar para WhatsApp
+            </button>
+
+        </form>
+    </div>
+
+    <section class="contactos" id="contactos">
+
+        <h1><i class="fa-solid fa-user"></i>Contactos</h1>
+        <ul>
+            <li><a><i class="fa-solid fa-envelope"></i>modebravlabs@mail.com</a></li>
+            <li><a><i class="fa-solid fa-phone"></i>258845998597</a></li>
+            <li><a><i class="fa-solid fa-envelope"></i>henriquesmuianga98@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <h1><strong><i class="fa-solid fa-code"></i></strong>Henry Vertez</h1>
+        <p>&copy 2024 Henry Vertez. Todos direitos reservados.</p>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://wwww.tiktok"><i class="fab fa-tiktok"></i></a> </li>
+                </li>
+                <li><a href="https://wwww.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://wwww.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wwww.github.com"><i class="fab fa-github"></i></a></li>
+            </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

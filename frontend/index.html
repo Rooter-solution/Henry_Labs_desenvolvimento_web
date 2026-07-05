@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>henry vertez_desenvolvimento_web_&_mobile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1><strong><i class="fa-solid fa-code"></i></strong> Henry vertez</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projectos">Projectos</a></li>
+                <li><a href="./pages/myPage.html">Contactos</a></li>
+                <button class="CtaBtn" onclick="window.location.href='./context/Signup.html'">Vamos conversar →</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="hero">
+        <h1>Ola, eu sou</h1>
+        <h2>Henry Vertez</h2>
+        <p>Desenvolvedor de soluções digitais com foco em<br><strong>performance, experiencia e resultados.</strong></p>
+        <p>Transformo ideias em produtos digitais modernos, <br>funcionais e que geram impacto real no negocio.</p>
+        <button class="Chat-Btn" onclick="window.location.href='./context/Signup.html'">Vamos conversar →</button>
+        <button class="projectosBtn" onclick="showPage('projectos')">Ver projectos</button>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://wwww.tiktok"><i class="fab fa-tiktok"></i></a> </li>
+                </li>
+                <li><a href="https://wwww.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://wwww.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wwww.github.com"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="sobreMim" id="sobre">
+        <article class="sobre">
+            <h1>Sobre mim</h1>
+            <h2>Mais sobre mim</h2>
+            <p>Sou apixonado pela tecnologia e design. Acredito que bos produtos digitais começaram com entendimento,
+                estrategia
+                e atenção aos detalhes</p>
+            <p>Atuo no desenvolvimento de aplicativos web e mobile, sempre buscando as melhores tecnologias para
+                entregar
+                soluções escalaveis e de alta qualidade</p>
+            <button class="SabermaisBtn" onclick="window.location.href='./context/Signup.html'">Saiba mais sobre
+                mim</button>
+        </article>
+        <div class="stats" id="statis">
+            <h1>Tecnologias Usadas</h1>
+            <ul>
+                <li><a><i class="fa-brands fa-html5"></i>html</a></li>
+                <li><a><i class="fa-brands fa-css3-alt"></i>Css</a></li>
+                <li><a><i class="fa-brands fa-js"></i>Javascript</a></li>
+                <li><a><i class="fa-brands fa-react"></i>React</a></li>
+                <li><a href="#"><i class="fa-solid fa-database"></i> MySQL</a></li>
+                <li><a href="#"><i class="fa-brands fa-node-js"></i> Node.js</a></li>
+                <li><a href="#"><i class="fa-brands fa-python"></i> Python</a></li>
+                </u>
+        </div>
+    </section>
+
+    <div class="servicos" id="servicos">
+        <h1>Serviços</h1>
+        <h2>O que eu faço</h2>
+        <div class="card">
+            <ul>
+                <li><a><i class="fa-solid fa-code"></i>
+                        <p><strong>Desenvilvimento Web</strong></p>
+                        <p>Sites e aplicações web modernas,
+                            responsivas e otimizadas para performance.</p>
+                    </a></li>
+                <li><a><i class="fa-solid fa-mobile-screen"></i>
+                        <p><strong>Desenvolvimento mobile</strong></p>
+                        <p>Aplicações moveis intuitivas
+                            para iOs e Android com otima experiencia de uso.</p>
+                    </a></li>
+                <li><a><i class="fa-solid fa-pencil-ruler"></i>
+                        <p><strong>UI/UX Design</strong></p>
+                        <p>Interfaces atractivas e funcionais
+                            pensadas para proporcionar as melhores experiencias.</p>
+                    </a></li>
+                <li><a><i class="fa-solid fa-lightbulb"></i>
+                        <p><strong>Consultoria Digital</strong></p>
+                        <p>Estrategias e soluções digitais
+                            personalizadas para impulsionar o seu negocio.</p>
+                    </a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="projectosDestaque" id="projectos">
+        <h1>Projectos</h1>
+        <h2>Projectos em destaque</h2>
+        <div class="ProjectoList">
+            <div class="card">
+                <img src="./images/gestaifinaceira.png" width="320px" height="160px" alt="Gestao Financeiro">
+                <p><strong>Gestor Financeiro</strong></p>
+                <p>Aplicações web para gestão financeira pessoal e empresarial.</p>
+                <a href="#">Ver projecto →</a>
+            </div>
+
+            <div class="card">
+                <img src="./images/E-Commerce.png" width="320px" height="160px" alt="E-Commerce">
+                <p><strong>E-Commerce</strong></p>
+                <p>Loja online moderna com foco em conversão e experiencia do usuario.</p>
+                <a href="#github">Ver projecto →</a>
+            </div>
+
+            <div class="card">
+                <img src="./images/TaskFlow.png" width="320px" height="160px" alt="TaskFlow">
+                <p><strong>TaskFlow</strong></p>
+                <p>Aplicações de produtividade para equipas e gestao de tarefas.</p>
+                <a href="#">Ver projecto →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="inscricao" id="section-inscricao">
+        <h1>Inscrição</h1>
+        <form id="form-inscricao">
+            <input type="text" id="nome" placeholder="Nome Completo" required>
+            <input type="email" id="email" placeholder="Digite Seu email" required>
+            <input type="tel" id="telefone" placeholder="Telefone" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <!-- Opcional: Div para mensagens de feedback -->
+        <div id="feedback-message"></div>
+    </section>
+    <div class="Convite">
+        <section class="CtaSection">
+            <h1>Vamos trabalhar juntos?</h1>
+            <p>Estou disponivel para novos projectos e desafios.</p>
+        </section>
+        <button class="CtaBtn" onclick="window.location.href='./context/Signup.html'">Vamos conversar →</button>
+    </div>
+
+    <footer>
+        <h1><strong><i class="fa-solid fa-code"></i></strong>Henry Vertez</h1>
+        <p>&copy 2024 Henry Vertez. Todos direitos reservados.</p>
+        <div class="social-links">
+            <ul>
+                <li><a href="https://wwww.tiktok"><i class="fab fa-tiktok"></i></a> </li>
+                </li>
+                <li><a href="https://wwww.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://wwww.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wwww.github.com"><i class="fab fa-github"></i></a></li>
+            </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
