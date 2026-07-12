@@ -1,965 +1,487 @@
-/* ============================================
-   ESTILOS PRINCIPAIS - VERSÃO OTIMIZADA
-   ============================================ */
-
-/* RESET E BASE */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(43, 43, 42);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    font-family: 'Poppins', Arial, sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-/* ============================================
-   HEADER - TOTALMENTE RESPONSIVO
-   ============================================ */
-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    border-bottom: 1px solid rgb(49, 49, 49);
-    background: black;
-    padding: 0.8rem 5%;
-    gap: 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-
-.header h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: clamp(18px, 2.5vw, 24px);
-    white-space: nowrap;
-}
-
-.header i {
-    color: orange;
-    font-size: clamp(18px, 2vw, 24px);
-    padding: 0.3em;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(10px, 2vw, 25px);
-    padding: 0;
-}
-
-.navbar li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffff;
-    font-size: clamp(13px, 1.2vw, 16px);
-    transition: color 0.3s ease;
-    white-space: nowrap;
-}
-
-.navbar a:hover {
-    color: orange;
-}
-
-.CtaBtn {
-    background-color: orange;
-    padding: 0.3em 1.2em;
-    height: auto;
-    min-height: 34px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    color: black;
-    font-weight: 600;
-    font-size: clamp(12px, 1vw, 14px);
-    transition: all 0.3s ease;
-    white-space: nowrap;
-}
-
-.CtaBtn:hover {
-    background-color: #e69500;
-    transform: scale(1.05);
-}
-
-/* ============================================
-   HERO - RESPONSIVO
-   ============================================ */
-.hero {
-    background: rgba(0, 0, 0, 0.5);
-    background-image: url('ambienteDev.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    padding: clamp(3rem, 10vw, 6rem) clamp(1.5rem, 5vw, 4rem);
-    min-height: 70vh;
-    width: 100%;
-}
-
-.hero h1 {
-    color: orange;
-    font-size: clamp(16px, 2vw, 22px);
-    text-transform: uppercase;
-    margin-bottom: 0.3rem;
-}
-
-.hero h2 {
-    color: #ffff;
-    text-transform: uppercase;
-    font-size: clamp(24px, 4vw, 42px);
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-.hero strong {
-    color: orange;
-}
-
-.hero p {
-    color: #cccccc;
-    font-size: clamp(14px, 1.2vw, 18px);
-    max-width: 600px;
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-}
-
-.hero button {
-    background: orange;
-    border: none;
-    padding: 0.6em 1.5em;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: clamp(13px, 1vw, 16px);
-    transition: all 0.3s ease;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.hero button:hover {
-    background-color: #e69500;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
-}
-
-.hero .social-links {
-    margin-top: 1.5rem;
-}
-
-.social-links ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: clamp(12px, 2vw, 20px);
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.social-links ul li a {
-    color: white;
-    font-size: clamp(20px, 2.5vw, 28px);
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.social-links ul li a:hover {
-    color: orange;
-    transform: translateY(-3px) scale(1.1);
-}
-
-/* ============================================
-   SOBRE MIM - RESPONSIVO
-   ============================================ */
-.sobreMim {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: rgb(19, 18, 18);
-    border-top: 1px solid rgb(31, 30, 30);
-    padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
-    gap: clamp(2rem, 5vw, 4rem);
-    width: 100%;
-}
-
-.sobre {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    justify-content: flex-start;
-    text-align: left;
-    flex: 1 1 300px;
-}
-
-.sobre h1 {
-    color: orange;
-    text-transform: uppercase;
-    font-size: clamp(16px, 1.5vw, 20px);
-}
-
-.sobre h2 {
-    color: white;
-    font-size: clamp(24px, 3vw, 36px);
-    margin: 0.5rem 0;
-}
-
-.sobre p {
-    color: #aaaaaa;
-    font-size: clamp(14px, 1vw, 16px);
-    line-height: 1.7;
-    margin-bottom: 0.8rem;
-}
-
-.sobre button {
-    background: transparent;
-    border: 1px solid grey;
-    max-width: 250px;
-    width: 100%;
-    color: white;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 8px;
-    padding: 0.7em 1.2em;
-    font-size: clamp(12px, 0.9vw, 14px);
-    transition: all 0.3s ease;
-    margin-top: 0.5rem;
-}
-
-.sobre button:hover {
-    background: orange;
-    border-color: orange;
-    color: black;
-    transform: translateY(-2px);
-}
-
-.stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 280px;
-    width: 100%;
-}
-
-.stats h1 {
-    color: aliceblue;
-    font-size: clamp(18px, 1.5vw, 24px);
-    margin-bottom: 1rem;
-}
-
-.stats ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(12px, 2vw, 20px);
-    padding: 0;
-    width: 100%;
-}
-
-.stats li {
-    background-color: black;
-    padding: 0.6em 1.2em;
-    border-radius: 4px;
-    border: 1px solid rgb(43, 42, 42);
-    color: white;
-    font-size: clamp(12px, 1vw, 15px);
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.stats li:hover {
-    border-color: orange;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.1);
-}
-
-.stats i {
-    padding: 0.3em;
-    color: orange;
-    font-size: clamp(16px, 1.5vw, 22px);
-}
-
-/* ============================================
-   SERVIÇOS - RESPONSIVO
-   ============================================ */
-.servicos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
-    background: rgb(30, 30, 30);
-}
-
-.servicos h1 {
-    color: orange;
-    font-size: clamp(16px, 1.5vw, 20px);
-    text-transform: uppercase;
-}
-
-.servicos h2 {
-    color: white;
-    font-size: clamp(24px, 3vw, 36px);
-    margin: 0.5rem 0 2rem;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.card ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: clamp(15px, 2vw, 25px);
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.card li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(24, 23, 23);
-    border-radius: 8px;
-    padding: clamp(1.5rem, 2vw, 2.5rem);
-    max-width: 280px;
-    flex: 1 1 200px;
-    min-width: 200px;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.card li:hover {
-    border-color: orange;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(255, 165, 0, 0.1);
-}
-
-.card i {
-    color: orange;
-    font-size: clamp(32px, 3.5vw, 48px);
-    margin-bottom: 0.8rem;
-}
-
-.card li p {
-    color: #aaaaaa;
-    font-size: clamp(13px, 0.9vw, 15px);
-    line-height: 1.6;
-}
-
-.card li p strong {
-    color: white;
-    display: block;
-    font-size: clamp(15px, 1.1vw, 18px);
-    margin-bottom: 0.5rem;
-}
-
-/* ============================================
-   PROJECTOS - RESPONSIVO
-   ============================================ */
-.projectosDestaque {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    background: white;
-    padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
-}
-
-.projectosDestaque h1 {
-    color: orange;
-    font-size: clamp(16px, 1.5vw, 20px);
-    text-transform: uppercase;
-}
-
-.projectosDestaque h2 {
-    color: black;
-    font-size: clamp(24px, 3vw, 36px);
-    margin: 0.5rem 0 2rem;
-}
-
-.ProjectoList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    gap: clamp(15px, 2vw, 25px);
-    padding: 0.5rem;
-}
-
-.ProjectoList .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 320px;
-    flex: 1 1 260px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 0 0 1rem 0;
-    overflow: hidden;
-    background: white;
-    transition: all 0.3s ease;
-}
-
-.ProjectoList .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
-
-.ProjectoList .card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-
-.ProjectoList .card p {
-    padding: 0.8rem 1.2rem 0.3rem;
-    color: #444;
-    font-size: clamp(13px, 0.9vw, 15px);
-}
-
-.ProjectoList .card p strong {
-    color: black;
-    display: block;
-    font-size: clamp(16px, 1.2vw, 20px);
-    margin-bottom: 0.3rem;
-}
-
-.ProjectoList .card a {
-    text-transform: uppercase;
-    color: orange;
-    font-weight: 600;
-    font-size: clamp(12px, 0.9vw, 14px);
-    margin: 0.5rem 0 0.8rem;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.ProjectoList .card a:hover {
-    color: #e69500;
-    transform: translateX(5px);
-}
-
-/* ============================================
-   INSCRIÇÃO - RESPONSIVO
-   ============================================ */
-.inscricao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 400px;
-    background: black;
-    height: auto;
-    width: 100%;
-    padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
-}
-
-.form-inscricao h1 {
-    color: #ffff;
-    font-size: clamp(20px, 2.5vw, 32px);
-    margin-bottom: 0.5rem;
-}
-
-form {
-    padding: 1.5rem;
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 12px;
-}
-
-input {
-    text-align: center;
-    width: 100%;
-    max-width: 450px;
-    padding: 0.6em 1em;
-    border-radius: 8px;
-    border: 1px solid rgb(36, 35, 35);
-    background: rgb(19, 18, 18);
-    color: rgb(255, 255, 255);
-    font-size: clamp(14px, 1vw, 16px);
-    transition: all 0.3s ease;
-}
-
-input:focus {
-    outline: none;
-    border-color: orange;
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.1);
-}
-
-::placeholder {
-    color: #888;
-}
-
-.inscricao button {
-    border-radius: 8px;
-    background-color: orange;
-    color: rgb(8, 8, 8);
-    border: none;
-    cursor: pointer;
-    padding: 0.7em 3em;
-    font-weight: 600;
-    font-size: clamp(14px, 1vw, 16px);
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 250px;
-}
-
-.inscricao button:hover {
-    background-color: #e69500;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(255, 165, 0, 0.3);
-}
-
-/* ============================================
-   CONVITE - RESPONSIVO
-   ============================================ */
-.Convite {
-    background: black;
-    color: white;
-    display: flex;
-    border-bottom: 1px solid rgb(37, 37, 37);
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: clamp(15px, 3vw, 30px);
-    padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 5vw, 4rem);
-}
-
-.Convite h1 {
-    font-size: clamp(22px, 3vw, 36px);
-}
-
-.Convite p {
-    color: #aaaaaa;
-    font-size: clamp(14px, 1vw, 18px);
-}
-
-.Convite .CtaBtn {
-    padding: 0.6em 2em;
-    font-size: clamp(14px, 1.2vw, 18px);
-}
-
-/* ============================================
-   FOOTER - RESPONSIVO
-   ============================================ */
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: black;
-    color: #ffff;
-    gap: clamp(15px, 2vw, 30px);
-    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 5vw, 4rem);
-    border-top: 1px solid rgb(30, 30, 30);
-}
-
-footer h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: clamp(14px, 1.2vw, 18px);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-footer i {
-    color: orange;
-    font-size: clamp(18px, 1.8vw, 24px);
-}
-
-footer p {
-    color: #888;
-    font-size: clamp(12px, 0.9vw, 14px);
-}
-
-footer .social-links ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: clamp(12px, 1.5vw, 20px);
-    padding: 0;
-}
-
-footer .social-links ul li a {
-    color: #888;
-    font-size: clamp(18px, 1.8vw, 24px);
-    transition: all 0.3s ease;
-}
-
-footer .social-links ul li a:hover {
-    color: orange;
-    transform: translateY(-3px);
-}
-
-/* ============================================
-   BOTÕES GERAIS - RESPONSIVO
-   ============================================ */
-button {
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: black !important;
-    border: 1px solid grey;
-    color: white !important;
-    transform: translateY(-2px);
-}
-
-/* ============================================
-   MEDIA QUERIES - PONTOS DE QUEBRA
-   ============================================ */
-
-/* Tablets e telas médias */
-@media (max-width: 992px) {
-    header {
-        justify-content: center;
-        padding: 0.8rem 3%;
-    }
-
-    .hero {
-        align-items: center;
-        text-align: center;
-        padding: clamp(4rem, 8vw, 6rem) 5%;
-        min-height: 60vh;
-    }
-
-    .hero p {
-        max-width: 100%;
-    }
-
-    .hero .social-links ul {
-        justify-content: center;
-    }
-
-    .sobreMim {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .sobre {
-        text-align: center;
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .sobre button {
-        margin: 0.5rem auto;
-    }
-
-    .stats {
-        width: 100%;
-    }
-
-    .stats ul {
-        justify-content: center;
-    }
-
-    .Convite {
-        flex-direction: column;
-        text-align: center;
-        padding: 2.5rem 5%;
-    }
-
-    .Convite .CtaBtn {
-        width: 100%;
-        max-width: 280px;
-    }
-}
-
-/* Mobile Grande */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 0.8rem 3%;
-        gap: 10px;
-    }
-
-    .navbar ul {
-        gap: 10px;
-    }
-
-    .navbar li a {
-        font-size: 13px;
-    }
-
-    .CtaBtn {
-        font-size: 12px;
-        padding: 0.3em 1em;
-        min-height: 30px;
-    }
-
-    .hero {
-        padding: clamp(3rem, 6vw, 4rem) 5%;
-        min-height: 50vh;
-    }
-
-    .hero button {
-        display: inline-block;
-        width: 100%;
-        max-width: 250px;
-        margin: 0.4rem auto;
-    }
-
-    .card ul {
-        gap: 15px;
-    }
-
-    .card li {
-        min-width: 160px;
-        flex: 1 1 160px;
-    }
-
-    .ProjectoList .card {
-        max-width: 100%;
-        flex: 1 1 280px;
-    }
-
-    .ProjectoList {
-        gap: 15px;
-    }
-
-    form {
-        padding: 1rem;
-    }
-
-    input {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .inscricao button {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 12px;
-        padding: 1.5rem 5%;
-    }
-}
-
-/* Mobile Pequeno */
-@media (max-width: 480px) {
-    header {
-        padding: 0.6rem 3%;
-    }
-
-    .header h1 {
-        font-size: 16px;
-    }
-
-    .navbar ul {
-        gap: 6px;
-    }
-
-    .navbar li a {
-        font-size: 11px;
-    }
-
-    .CtaBtn {
-        font-size: 10px;
-        padding: 0.2em 0.8em;
-        min-height: 26px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .hero p {
-        font-size: 13px;
-    }
-
-    .hero button {
-        font-size: 12px;
-        padding: 0.5em 1.2em;
-        max-width: 200px;
-    }
-
-    .sobre h2 {
-        font-size: 22px;
-    }
-
-    .servicos h2 {
-        font-size: 22px;
-    }
-
-    .projectosDestaque h2 {
-        font-size: 22px;
-    }
-
-    .card li {
-        min-width: 140px;
-        flex: 1 1 140px;
-        padding: 1.2rem;
-    }
-
-    .ProjectoList .card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .Convite h1 {
-        font-size: 20px;
-    }
-
-    .stats li {
-        font-size: 11px;
-        padding: 0.4em 0.8em;
-    }
-
-    .stats i {
-        font-size: 14px;
-    }
-
-    .social-links ul li a {
-        font-size: 18px;
-    }
-
-    footer h1 {
-        font-size: 13px;
-    }
-
-    footer p {
-        font-size: 11px;
-    }
-}
-
-/* ============================================
-   ANIMAÇÕES E MELHORIAS VISUAIS
-   ============================================ */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero,
-.sobreMim,
-.servicos,
-.projectosDestaque,
-.inscricao,
-.Convite {
-    animation: fadeIn 0.8s ease forwards;
-}
-
-/* Scrollbar personalizada */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgb(20, 20, 20);
-}
-
-::-webkit-scrollbar-thumb {
-    background: orange;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #e69500;
-}
-
-/* Seleção de texto */
-::selection {
-    background: orange;
-    color: black;
-}
-
-/* ============================================
-   UTILITÁRIOS ADICIONAIS
-   ============================================ */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Ajuste para telas muito pequenas */
-@media (max-width: 360px) {
-    .navbar ul {
-        gap: 4px;
-    }
-
-    .navbar li a {
-        font-size: 10px;
-    }
-
-    .hero h2 {
-        font-size: 20px;
-    }
-
-    .hero button {
-        font-size: 11px;
-        padding: 0.4em 1em;
-        max-width: 170px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+body{
+
+    background:#050816;
+    color:white;
+    line-height:1.6;
+
+}
+
+
+header{
+
+    width:90%;
+    margin:auto;
+    padding:25px 0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+
+header h1{
+
+    font-size:28px;
+    color:#00ff99;
+
+}
+
+
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+    color:#ccc;
+    font-weight:500;
+
+}
+
+
+nav a:hover{
+
+    color:#00ff99;
+
+}
+
+
+
+button{
+
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#111827;
+    color:white;
+    border:1px solid #333;
+
+}
+
+
+
+.primary{
+
+    background:linear-gradient(90deg,#00ff99,#00ccff);
+    color:#000;
+    font-weight:bold;
+
+}
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    min-height:90vh;
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+
+
+.hero div{
+
+    width:50%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+    line-height:1.1;
+
+}
+
+
+
+.hero p{
+
+    margin:25px 0;
+    color:#aaa;
+    font-size:18px;
+
+}
+
+
+
+
+.dashboard{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+
+
+
+.dashboard .card{
+
+    width:350px;
+    height:300px;
+
+    background:
+    linear-gradient(145deg,#111827,#020617);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:
+    0 0 50px rgba(0,255,153,0.2);
+
+
+}
+
+
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+    width:90%;
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+
+
+section h1{
+
+    font-size:40px;
+    margin-bottom:50px;
+
+}
+
+
+
+
+
+
+/* FEATURES */
+
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.card{
+
+
+    background:#111827;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border:1px solid #1f2937;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-10px);
+
+    border-color:#00ff99;
+
+
+}
+
+
+
+.card i{
+
+
+    font-size:40px;
+
+    color:#00ff99;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.card p{
+
+    color:#aaa;
+
+}
+
+
+
+
+
+
+
+
+/* STEPS */
+
+
+.steps{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+}
+
+
+
+.steps div{
+
+    width:250px;
+
+}
+
+
+
+.steps span{
+
+    display:inline-flex;
+
+    width:60px;
+    height:60px;
+
+    align-items:center;
+    justify-content:center;
+
+    background:#00ff99;
+
+    color:black;
+
+    border-radius:50%;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+/* PRICING */
+
+
+
+.pricing{
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+.pricing .card h1{
+
+    color:#00ff99;
+
+}
+
+
+
+
+.premium{
+
+
+    transform:scale(1.05);
+
+    border:2px solid #00ff99;
+
+
+}
+
+
+
+
+
+
+/* CTA */
+
+
+
+.cta{
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #00ff99,
+    #0066ff
+    );
+
+    color:black;
+
+    padding:70px;
+
+    border-radius:30px;
+
+
+}
+
+
+
+.cta button{
+
+
+    background:black;
+
+    color:white;
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+footer{
+
+
+    text-align:center;
+
+    padding:40px;
+
+    border-top:1px solid #222;
+
+    color:#888;
+
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+
+@media(max-width:900px){
+
+
+header,
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.hero div{
+
+    width:100%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+
+.features,
+.pricing{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.steps{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+
+nav{
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
 }
