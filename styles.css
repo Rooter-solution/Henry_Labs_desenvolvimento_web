@@ -1,24 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
 }
 
 
 body{
 
-    background:#050816;
+    font-family:'Poppins',sans-serif;
+    background:#050505;
     color:white;
-    line-height:1.6;
 
 }
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+
+/* HEADER */
 
 
 header{
 
     width:90%;
     margin:auto;
+
     padding:25px 0;
 
     display:flex;
@@ -31,8 +46,18 @@ header{
 
 header h1{
 
-    font-size:28px;
-    color:#00ff99;
+    font-size:30px;
+
+    display:flex;
+    gap:10px;
+
+}
+
+
+
+header i{
+
+    color:#00ff88;
 
 }
 
@@ -42,7 +67,7 @@ nav{
 
     display:flex;
     align-items:center;
-    gap:25px;
+    gap:30px;
 
 }
 
@@ -50,42 +75,53 @@ nav{
 
 nav a{
 
+    color:#aaa;
+
     text-decoration:none;
-    color:#ccc;
-    font-weight:500;
 
 }
+
 
 
 nav a:hover{
 
-    color:#00ff99;
+    color:#00ff88;
 
 }
+
 
 
 
 button{
 
-    padding:12px 25px;
-    border:none;
+    padding:14px 28px;
+
     border-radius:30px;
+
+    border:none;
+
     cursor:pointer;
-    background:#111827;
+
+    background:#111;
+
     color:white;
-    border:1px solid #333;
+
+    font-weight:600;
 
 }
 
 
 
-.primary{
 
-    background:linear-gradient(90deg,#00ff99,#00ccff);
-    color:#000;
-    font-weight:bold;
+.CtaBtn{
+
+    background:
+    linear-gradient(90deg,#00ff88,#00ccff);
+
+    color:black;
 
 }
+
 
 
 
@@ -95,31 +131,42 @@ button{
 
 .hero{
 
-    min-height:90vh;
 
     width:90%;
+
+    min-height:90vh;
+
     margin:auto;
 
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
 
-}
-
-
-
-.hero div{
-
-    width:50%;
 
 }
+
 
 
 
 .hero h1{
 
-    font-size:60px;
+    font-size:65px;
+
     line-height:1.1;
+
+}
+
+
+
+
+.hero h2{
+
+
+    font-size:70px;
+
+    color:#00ff88;
 
 }
 
@@ -127,39 +174,57 @@ button{
 
 .hero p{
 
-    margin:25px 0;
     color:#aaa;
+
     font-size:18px;
 
-}
-
-
-
-
-.dashboard{
-
-    display:flex;
-    justify-content:center;
+    margin:25px 0;
 
 }
 
 
 
 
-.dashboard .card{
 
-    width:350px;
-    height:300px;
+.hero-box{
+
+
+    width:400px;
+
+    height:400px;
 
     background:
-    linear-gradient(145deg,#111827,#020617);
 
-    border-radius:25px;
+    radial-gradient(circle,#00ff8840,transparent);
 
-    padding:30px;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.hero-box div{
+
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:30px;
+
+    background:#111827;
+
+    border:1px solid #333;
+
+    padding:40px;
 
     box-shadow:
-    0 0 50px rgba(0,255,153,0.2);
+
+    0 0 60px #00ff8830;
 
 
 }
@@ -170,12 +235,53 @@ button{
 
 
 
-/* SECTIONS */
+/* STATS */
 
 
-section{
+.stats{
+
 
     width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    padding:50px;
+
+
+}
+
+
+
+.stats h2{
+
+    color:#00ff88;
+
+    font-size:40px;
+
+}
+
+
+
+
+
+
+
+
+
+/* SERVICOS */
+
+
+.servicos{
+
+
+    width:90%;
+
     margin:100px auto;
 
     text-align:center;
@@ -184,29 +290,17 @@ section{
 
 
 
-section h1{
+.cards{
 
-    font-size:40px;
-    margin-bottom:50px;
-
-}
-
-
-
-
-
-
-/* FEATURES */
-
-
-.features{
 
     display:grid;
 
     grid-template-columns:
-    repeat(3,1fr);
 
-    gap:30px;
+    repeat(4,1fr);
+
+    gap:25px;
+
 
 }
 
@@ -215,15 +309,16 @@ section h1{
 .card{
 
 
-    background:#111827;
+    background:#111;
 
     padding:35px;
 
-    border-radius:20px;
+    border-radius:25px;
 
-    border:1px solid #1f2937;
+    border:1px solid #222;
 
-    transition:.3s;
+    transition:.4s;
+
 
 }
 
@@ -232,9 +327,9 @@ section h1{
 .card:hover{
 
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
-    border-color:#00ff99;
+    border-color:#00ff88;
 
 
 }
@@ -244,18 +339,45 @@ section h1{
 .card i{
 
 
-    font-size:40px;
+    font-size:45px;
 
-    color:#00ff99;
+    color:#00ff88;
 
     margin-bottom:20px;
+
 
 }
 
 
 
 
-.card p{
+
+
+/* TECNOLOGIAS */
+
+
+.tech{
+
+
+    text-align:center;
+
+    padding:80px;
+
+}
+
+
+.tech span{
+
+
+    display:inline-block;
+
+    padding:15px 25px;
+
+    margin:10px;
+
+    background:#111;
+
+    border-radius:20px;
 
     color:#aaa;
 
@@ -268,48 +390,42 @@ section h1{
 
 
 
-/* STEPS */
+/* PROJETOS */
 
 
-.steps{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:40px;
-
-}
+.projectos{
 
 
+    width:90%;
 
-.steps div{
-
-    width:250px;
+    margin:auto;
 
 }
 
 
 
-.steps span{
+.projects-grid{
 
-    display:inline-flex;
 
-    width:60px;
-    height:60px;
+display:grid;
 
-    align-items:center;
-    justify-content:center;
+grid-template-columns:
+repeat(3,1fr);
 
-    background:#00ff99;
+gap:30px;
 
-    color:black;
 
-    border-radius:50%;
+}
 
-    font-size:25px;
 
-    font-weight:bold;
+
+
+.project img{
+
+
+width:100%;
+
+border-radius:15px;
 
 
 }
@@ -319,40 +435,34 @@ section h1{
 
 
 
-/* PRICING */
+
+
+/* PLANOS */
+
+
+.planos{
+
+
+width:90%;
+
+margin:100px auto;
+
+text-align:center;
+
+
+}
 
 
 
 .pricing{
 
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:
-    repeat(3,1fr);
+grid-template-columns:
+repeat(3,1fr);
 
-    gap:30px;
-
-
-}
-
-
-
-.pricing .card h1{
-
-    color:#00ff99;
-
-}
-
-
-
-
-.premium{
-
-
-    transform:scale(1.05);
-
-    border:2px solid #00ff99;
+gap:30px;
 
 
 }
@@ -360,41 +470,76 @@ section h1{
 
 
 
+.price{
 
 
-/* CTA */
+background:#111;
 
+padding:40px;
 
-
-.cta{
-
-
-    background:
-    linear-gradient(
-    135deg,
-    #00ff99,
-    #0066ff
-    );
-
-    color:black;
-
-    padding:70px;
-
-    border-radius:30px;
+border-radius:25px;
 
 
 }
 
 
 
-.cta button{
+.price h1{
 
 
-    background:black;
+font-size:45px;
 
-    color:white;
+color:#00ff88;
 
-    margin-top:25px;
+
+}
+
+
+
+
+.price.pro{
+
+
+transform:scale(1.08);
+
+border:2px solid #00ff88;
+
+
+}
+
+
+
+
+
+
+
+/* CTA FINAL */
+
+
+.final{
+
+
+margin:100px auto;
+
+width:90%;
+
+padding:80px;
+
+text-align:center;
+
+border-radius:30px;
+
+
+background:
+
+linear-gradient(
+135deg,
+#00ff88,
+#0066ff
+);
+
+
+color:black;
 
 
 }
@@ -406,13 +551,14 @@ section h1{
 footer{
 
 
-    text-align:center;
+padding:50px;
 
-    padding:40px;
+text-align:center;
 
-    border-top:1px solid #222;
+border-top:1px solid #222;
 
-    color:#888;
+color:#777;
+
 
 }
 
@@ -421,9 +567,7 @@ footer{
 
 
 
-
-
-/* RESPONSIVO */
+/* MOBILE */
 
 
 @media(max-width:900px){
@@ -432,43 +576,34 @@ footer{
 header,
 .hero{
 
-    flex-direction:column;
 
-    text-align:center;
+flex-direction:column;
+
+text-align:center;
+
 
 }
 
 
 
-.hero div{
+.hero h1,
+.hero h2{
 
-    width:100%;
+
+font-size:40px;
+
 
 }
 
 
 
-.hero h1{
-
-    font-size:40px;
-
-}
-
-
-
-.features,
+.cards,
+.projects-grid,
 .pricing{
 
-    grid-template-columns:1fr;
 
-}
+grid-template-columns:1fr;
 
-
-
-.steps{
-
-    flex-direction:column;
-    align-items:center;
 
 }
 
@@ -476,9 +611,20 @@ header,
 
 nav{
 
-    margin-top:20px;
 
-    flex-wrap:wrap;
+margin-top:20px;
+
+}
+
+
+
+.stats{
+
+
+flex-direction:column;
+
+text-align:center;
+
 
 }
 
